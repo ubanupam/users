@@ -67,7 +67,7 @@ const App = () => {
       const response = await fetch(`${API_URL}/${id}`, {
         method: 'DELETE',
       });
-      console.log('User deleted:', id);
+      console.log('User deleted:', id, response);
       fetchUsers();
     } catch (error) {
       console.error('Error deleting user:', error);
